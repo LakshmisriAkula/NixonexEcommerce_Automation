@@ -86,7 +86,7 @@ NixonexEcommerce_Automation/
 
 ## 📘 Final Report
 
-Download the final project report [[here](https://github.com/LakshmisriAkula/NixonexEcommerce_Automation/blob/main/Nixonex_Final_Project_Report.pdf)  
+Download the final project report [[here]](https://github.com/LakshmisriAkula/NixonexEcommerce_Automation/blob/main/Nixonex_Final_Project_Report.pdf)  
 
 ---
 
