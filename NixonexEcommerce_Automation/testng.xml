@@ -5,7 +5,20 @@
 		<listener class-name="com.nixonex.extentreportlistener.ExtentTestListener" />
 	</listeners>
 	
-    <test name="Automation Tests">
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.nixonex.tests.RegisterTest"/>
+            <class name="com.nixonex.tests.LoginTest"/>
+            <class name="com.nixonex.tests.ProductSearchTest"/>
+            <class name="com.nixonex.tests.AddToCartTest"/>
+            <class name="com.nixonex.tests.CheckOutTest"/>
+            <class name="com.nixonex.tests.EndToEndTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox"/>
         <classes>
             <class name="com.nixonex.tests.RegisterTest"/>
             <class name="com.nixonex.tests.LoginTest"/>

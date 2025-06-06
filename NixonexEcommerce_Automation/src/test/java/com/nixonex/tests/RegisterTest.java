@@ -1,6 +1,7 @@
 package com.nixonex.tests;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.nixonex.base.TestBase;
@@ -10,9 +11,11 @@ public class RegisterTest extends TestBase {
 	RegisterPage registerPage;
 	String username = "user" + System.currentTimeMillis();
 
+	@Parameters("browser")
+
 	@BeforeMethod
-	public void setUp() {
-		initialization();
+	public void setUp(String browser) {
+		initialization(browser);
 		registerPage = new RegisterPage(driver);
 	}
 

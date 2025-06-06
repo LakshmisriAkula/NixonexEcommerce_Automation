@@ -1,6 +1,7 @@
 package com.nixonex.tests;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.nixonex.base.TestBase;
@@ -11,9 +12,10 @@ public class AddToCartTest extends TestBase {
 	ProductPage productPage;
 	CartPage cartPage;
 
+	@Parameters("browser")
 	@BeforeMethod
-	public void setUp() {
-		initialization();
+	public void setUp(String browser) {
+		initialization(browser);
 		productPage = new ProductPage(driver);
 		cartPage = new CartPage(driver);
 
@@ -37,7 +39,7 @@ public class AddToCartTest extends TestBase {
 		logWithScreenshot("Product added to cart");
 
 		cartPage.clearCart();
-		
+
 		Thread.sleep(2000);
 
 		logWithScreenshot("Cart Items Removed");

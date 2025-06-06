@@ -1,6 +1,7 @@
 package com.nixonex.tests;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.nixonex.base.TestBase;
@@ -11,9 +12,11 @@ public class ProductSearchTest extends TestBase {
 	ProductPage productPage;
 	CartPage cartPage;
 
+	@Parameters("browser")
+
 	@BeforeMethod
-	public void setUp() {
-		initialization();
+	public void setUp(String browser) {
+		initialization(browser);
 		productPage = new ProductPage(driver);
 		cartPage = new CartPage(driver);
 

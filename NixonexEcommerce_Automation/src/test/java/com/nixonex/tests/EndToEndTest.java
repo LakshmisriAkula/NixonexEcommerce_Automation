@@ -2,6 +2,7 @@ package com.nixonex.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.nixonex.base.TestBase;
@@ -22,9 +23,11 @@ public class EndToEndTest extends TestBase {
 
 	String username = "user" + System.currentTimeMillis(); // Unique username
 
+	@Parameters("browser")
+
 	@BeforeMethod
-	public void setUp() {
-		initialization();
+	public void setUp(String browser) {
+		initialization(browser);
 		registerPage = new RegisterPage(driver);
 		loginPage = new LoginPage(driver);
 		productPage = new ProductPage(driver);

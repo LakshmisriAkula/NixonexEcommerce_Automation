@@ -30,6 +30,10 @@ public class ExtentTestListener implements ITestListener, ISuiteListener {
 		ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(spark);
+
+		// Add System Info
+		String browser = System.getProperty("browser", "chrome"); // default to chrome
+		extent.setSystemInfo("Browser", browser);
 		extent.setSystemInfo("Suite", suite.getName());
 	}
 

@@ -38,27 +38,18 @@ public class TestBase {
 		}
 	}
 
-	public static void initialization() {
+	public static void initialization(String browserName) {
 
-		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
-				: prop.getProperty("browser");
-
-		if (browserName.equals("chrome")) {
-
+		if (browserName.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
-
-			driver.manage().window().maximize();
-
-		} else if (browserName.equals("firefox")) {
-
+		} else if (browserName.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
-
-			driver.manage().window().maximize();
-
+		} else {
+			throw new RuntimeException("Unsupported browser: " + browserName);
 		}
 
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-
 		driver.get(prop.getProperty("url"));
 
 	}

@@ -2,6 +2,7 @@ package com.nixonex.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.nixonex.base.TestBase;
@@ -16,9 +17,11 @@ public class CheckOutTest extends TestBase {
 	CheckoutPage checkoutPage;
 	ConfirmationPage confirmationPage;
 
+	@Parameters("browser")
+
 	@BeforeMethod
-	public void setUp() {
-		initialization();
+	public void setUp(String browser) {
+		initialization(browser);
 		productPage = new ProductPage(driver);
 		cartPage = new CartPage(driver);
 		checkoutPage = new CheckoutPage(driver);
