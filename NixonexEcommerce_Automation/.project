@@ -20,11 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>Nixonex_Final_Project_Report.pdf</name>
-			<type>1</type>
-			<location>E:/StarAgile - NixonexEcommerce_Automation/Nixonex_Final_Project_Report.pdf</location>
-		</link>
-	</linkedResources>
 </projectDescription>
