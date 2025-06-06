@@ -15,7 +15,7 @@ To automate key user flows on an e-commerce platform, ensuring that core functio
 | Tool              | Purpose                          |
 |------------------|----------------------------------|
 | Java              | Programming language             |
-| Selenium WebDriver| UI automation                    |
+| Selenium WebDriver| UI automation with cross-browser support (Chrome & Firefox) |
 | TestNG            | Test framework                   |
 | Maven             | Build and dependency management  |
 | ExtentReports     | Test reporting with screenshots  |
@@ -54,7 +54,7 @@ NixonexEcommerce_Automation/
 
 ### Prerequisites:
 - Java 11+ and Maven installed
-- Chrome browser
+- Chrome & Firefox browsers
 - IDE like IntelliJ or Eclipse
 
 ### Steps:
@@ -69,9 +69,9 @@ NixonexEcommerce_Automation/
    mvn clean install
    ```
 
-3. Run tests:
+3. Run tests on a single browser:
    ```bash
-   mvn test
+   mvn test -Dbrowser=chrome
    ```
    or run `testng.xml` from your IDE.
 
