@@ -90,14 +90,14 @@ Download the final project report [[here]](https://github.com/LakshmisriAkula/Ni
 
 ---
 
-## 🙌 Author
+## 👩‍💻 Author
 
-**Lakshmisri Akula**  
-**akulalakshmisri@gmail.com**
-
+**Lakshmi Akula**  
+QA Engineer | 8+ Years Experience in Manual and 4 Years Experience in Automation Testing  
+[GitHub Profile](https://github.com/LakshmisriAkula)
 
 ---
 
-## 📄 License
+## 📬 Contact
 
-This project is for educational/demo purposes. No commercial rights reserved.
+For any queries or clarifications, feel free to reach out via GitHub Issues or LinkedIn.
