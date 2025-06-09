@@ -25,7 +25,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"\\StarAgile Capstone Projects\\StarAgileCapstoneProjects\\NixonexEcommerce_Automation\\src\\main\\java\\com\\nixonex\\config\\config.properties");
+					"E:\\StarAgile - NixonexEcommerce_Automation\\NixonexEcommerce_Automation\\NixonexEcommerce_Automation\\src\\main\\java\\com\\nixonex\\config\\config.properties");
 			try {
 				prop.load(ip);
 			} catch (IOException e) {
